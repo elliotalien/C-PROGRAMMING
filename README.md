@@ -5,7 +5,7 @@ BASIC C PROGRAMMING QUESTIONS AND ANSWERS
 
 <br>
 
-<h1>History</h1> 
+<h2>History</h2> 
 <br>
 C was created by Dennis Ritchie at Bell Labs in the early 1970s as an augmented version of Ken Thompson's B.[3] Another Bell Labs employee, Brian Kernighan, had written the first C tutorial,[4] and he persuaded Ritchie to coauthor a book on the language.[5] Kernighan would write most of the book's "expository" material, and Ritchie's reference manual became its appendices.
 
@@ -20,3 +20,7 @@ ANSI C, first standardized in 1989 (as ANSI X3.159-1989), has since undergone se
 <br>
 
 <a href="https://github.com/elliotalien/C-PROGRAMMING/blob/main/Basic%20c%20program%20Questions.txt">BASIC QUESTION ANSWERS </a>
+
+<br>
+<img href="https://github.com/elliotalien/C-PROGRAMMING/blob/main/pngwing.com.png" width="90px" height="90px">
+<a href="https://github.com/elliotalien/C-PROGRAMMING/tree/main/FILES"> FILES FOR DOWNLODING</a>
