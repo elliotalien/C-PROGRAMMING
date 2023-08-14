@@ -358,11 +358,11 @@ int main() {
     int marks;
     char grade;
 
-    // Input: Get marks from user
+   
     printf("Enter the marks: ");
     scanf("%d", &marks);
 
-    // Determine grade based on marks
+   
     if (marks >= 90) {
         grade = 'A';
     } else if (marks >= 80) {
@@ -375,7 +375,7 @@ int main() {
         grade = 'E';
     }
 
-    // Display the calculated grade
+    
     printf("The grade is: %c\n", grade);
 
     return 0;
