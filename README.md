@@ -5,7 +5,7 @@ BASIC C PROGRAMMING QUESTIONS AND ANSWERS
 
 <br>
 
-<b>History </b>
+<h1>History</h1> 
 <br>
 C was created by Dennis Ritchie at Bell Labs in the early 1970s as an augmented version of Ken Thompson's B.[3] Another Bell Labs employee, Brian Kernighan, had written the first C tutorial,[4] and he persuaded Ritchie to coauthor a book on the language.[5] Kernighan would write most of the book's "expository" material, and Ritchie's reference manual became its appendices.
 
@@ -16,3 +16,7 @@ In April 1988, the second edition of the book was published, updated to cover th
 ANSI C, first standardized in 1989 (as ANSI X3.159-1989), has since undergone several revisions, the most recent of which is ISO/IEC 9899:2018 (also termed C17 or C18), adopted as an ANSI standard in June 2018. However, no new edition of The C Programming Language has been issued to cover the more recent standards.
 
 <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language">for more information</a>
+
+<br>
+
+<a href="https://github.com/elliotalien/C-PROGRAMMING/blob/main/Basic%20c%20program%20Questions.txt">BASIC QUESTION ANSWERS </a>
