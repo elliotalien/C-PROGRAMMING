@@ -1,0 +1,392 @@
+|--------------------------------------------------------------|
+|                                                              |
+|               BASIC C PROGRAM QUESTIONS                      |
+|                                                              |
+|--------------------------------------------------------------|
+
+
+Q1.Write an algorithm to add two numbers entered by the user
+
+#include <stdio.h>
+int main(){
+    int num1,num2;
+    int sum;
+    printf("enter first number  :");
+    scanf("%d",&num1);
+    printf("enter second number :");
+    scanf("%d",&num2);
+
+          sum=num1+num2;
+
+          printf("Result is :%d",sum);
+
+    return 0;
+}
+
+---------------------------------------------------
+
+Q2.Write an algorithm to print “Stackup” 100 times
+
+#include <stdio.h>
+int main (){
+    int i;
+    for(i=1;i<=100;i++){
+    printf("stckup ");
+    } 
+    return 0;
+}
+
+----------------------------------------------------
+Q3.Write an algorithm to find the largest number among three numbers
+
+#include <stdio.h>
+int main(){
+    int num1,num2,num3;
+    printf("enter num1 number :");
+    scanf("%d",&num1);
+    printf("enter num2 number :");
+    scanf("%d",&num2);
+    printf("enter num3 number :");
+    scanf("%d",&num3);
+    if(num1>=num2 && num1>=num3){
+        printf("num1 is largest :%d",num1);
+    }
+    else if(num2>=num1 && num2>=num3){
+        printf("num2 is largest :%d",num2);
+    }
+    else if(num3>=num1 && num3>=num2){
+        printf("num3 is largest :%d",num3);
+    }
+    return 0;
+
+}
+
+---------------------------------------------------
+
+Q4.Write an algorithm to find and display sum of first n numbers
+
+#include <stdio.h>
+int main(){
+    int i,n,sum=0;
+    printf("enter a number :");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        sum=sum+i;
+    }
+    printf("sum of first n numbers :%d",sum);
+}
+---------------------------------------------------
+
+Q5.Write an algorithm to find the factorial of a number entered by the user
+
+#include <stdio.h>
+int main(){
+    int i,sum=1,n;
+    printf("enter a number :");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        sum=sum*i;
+    }
+    printf("factorial is :%d",sum);
+    return 0;
+}
+
+
+----------------------------------------------------
+
+Q6.Write an algorithm to check whether a number entered by the user is prime or not
+
+
+#include <stdio.h>
+int main(){
+ int  n,i,count = 0 ;
+ printf("enter a number ");
+ scanf("%d",&n);
+ for(i=1;i<=n;i++){
+    if(n % i == 0){
+      count ++;
+    }
+ }
+ if (count==2){
+   printf("you enterd number is prime");
+ }
+ else{
+   printf("you enterd number is note prime");
+ }
+    return 0;
+}
+----------------------------------------------------
+Q7.Write an algorithm to print all the prime numbers from 1 to 100
+
+#include <stdio.h>
+int main(){
+ int n,count,i;
+ for(n=1;n<=100;n++){
+   count=0;
+   for(i=1;i<=n;i++){
+      if(n%i==0){
+         count++;
+      }
+   }
+       if(count==2){
+         printf("%d ",n);
+      }
+   }
+ return 0;
+}
+----------------------------------------------------
+
+Q8.Write an algorithm to print all odd numbers from 1-100
+
+
+#include <stdio.h>
+int main (){
+    int i,odd;
+    printf("odd numbers are :");
+    for(i=1;i<100;i++){
+        odd=i%2;
+        if(odd==1){
+            printf("%d",i);
+        }
+            else    
+                printf(",");
+    }
+    return 0;
+}
+
+------------------------------------------------------
+
+Q9.Write an algorithm to print the fibonacci series till 1000            
+
+
+#include <stdio.h>
+int main(){
+ int i,f0=0,f1=1,fn,n=5;
+ for(i=1;i<=n;i++){
+   fn=f0+f1;
+   f0=f1;
+   f1=fn;
+     printf("%d ,",f0);
+ }
+
+ return 0;
+}
+
+---------------------------------------------------
+Q10.Write an algorithm to print the series 1,4,9,16....100
+
+                                               
+#include <stdio.h>                                
+int main(){                                       
+ int i,n=100;                                     
+ for(i=1;i<=n;i++){                               
+  printf("%d ,", i*i);                            
+ }                                                
+ return 0;                                        
+}                                                 
+----------------------------------------------------
+
+Q11.Write an algorithm to print all numbers from 1-1000 in the reverse order. ie . 1000, 999, 998...
+
+#include <stdio.h>
+int main (){
+    int i,n;
+    printf("enter a number :");
+    scanf("%d",&n);
+    printf("Result is :");
+    for(i=n;i>=1;i--){
+        printf("%d ",i);
+    }
+    return 0;
+}
+----------------------------------------------------
+
+Q12.Write an algorithm to create a program to compute the volume of a sphere. Use the formula: V = (4/3) *pi*r3 where pi is equal to 3.1416 approximately. The r is the radius of sphere. Display the result.
+
+
+#include <stdio.h>
+int main (){
+    float v,r;
+    float pi=3.1416;
+    printf("enter the radius :");
+    scanf("%f",&r);
+    v=(4/3)*pi*r*r*r;
+    printf("volume of sphere is : %f",v);
+    return 0;
+}
+
+-----------------------------------------------------
+
+Q13.Write an algorithm to create a program that exchanges the value of two variables: x and y. The output must be: the value of variable y will become the value of variable x, and vice versa.
+
+#include <stdio.h>
+int main(){
+ int x,y,temp=0;
+ printf("Enter a number for X : ");
+ scanf("%d",&x);
+  printf("\n");
+
+ printf("Enter a number for Y :");
+ scanf("%d",&y);
+  printf("\n\n");
+ printf("Before X and Y values :\n");
+ printf("X is %d",x);
+ printf("\n");
+ printf("Y is %d",y);
+ printf("\n\n");
+
+temp=x;
+x=y;
+y=temp;
+ printf("after X and Y values :\n");
+ printf("X is %d",x);
+ printf("\n\n");
+ printf("Y is %d",y);
+
+ return 0;
+}
+
+-----------------------------------------------------
+Q14.Write an algorithm to design a program to find the circumference of a circle. Use the formula: C=2πr, where π is approximately equivalent 3.1416.
+
+#include <stdio.h>
+int main(){
+    float pi=3.1416,n,c;
+    printf("enter a value :");
+    scanf("%f",&n);
+    c=2*pi*n;
+    printf("%f",c);
+    return 0;
+}
+
+
+-----------------------------------------------------
+
+Q15.Write an algorithm to create a program to compute the area of a circle. Derive your formula from the given equation: A=πr², then display the output.
+
+
+#include <stdio.h>
+int main(){
+    float pi=3.1416,area,r;
+    printf("enter the radius :");
+    scanf("%f",&r);
+    area=pi*r*r;
+    printf("Area of circle is :%f",area);
+    return 0;
+}
+
+-----------------------------------------------------
+
+Q16.Write an algorithm to check whether a triangle is possible or not based on the three angles given.
+
+#include <stdio.h>
+int main(){
+    int a1,a2,a3,sum;
+    printf("Enter Angle1 value :");
+    scanf("%d",&a1);
+     printf("Enter Angle2 value :");
+    scanf("%d",&a2);
+     printf("Enter Angle3 value :");
+    scanf("%d",&a3);
+
+    sum=a1+a2+a3;
+
+    if(sum==180){
+        printf("Triangle is possible");
+    }
+    else{
+        printf("Triangle is  note possible");
+    }
+    return 0;
+}
+
+--------------------------------------------------------------
+
+Q17.Write an algorithm to calculate Simple Interest ( I = PRt/100, where I = interest, P = principal, R = rate, and t = time)
+
+#include <stdio.h>
+int main(){
+    int p,r,i,t;
+    printf("Enter principle amount :");
+    scanf("%d",&p);
+    printf("Enter rate of interest :");
+    scanf("%d",&r);
+    printf("Enter time in year :");
+    scanf("%d",&t);
+
+    i=p*r*t/100;
+
+    printf("Result is :%d",i);
+
+    return 0;
+}
+
+----------------------------------------------------
+
+Q18.Write an algorithm to check whether a person can vote based on the age. (only persons above 18 years can vote)
+
+#include <stdio.h>
+int main(){
+    int age;
+
+    printf("enter your age :");
+    scanf("%d",&age);
+
+    if(age>=18){
+        printf("You can vote!!!");
+    }
+    else{
+         printf("You can't vote!!!");
+    }
+    return 0;
+}
+
+------------------------------------------------------
+
+Q19.Write an algorithm to implement a grading system, The grading works in the following manner
+
+A: marks equal and above 90,
+B: marks equal to 80 and less than 90,
+C: marks equal to 70 and less than 80,
+D: marks equal to 70 and less than 80,
+E:Less than 60"
+
+
+#include <stdio.h>
+
+int main() {
+    int marks;
+    char grade;
+
+    // Input: Get marks from user
+    printf("Enter the marks: ");
+    scanf("%d", &marks);
+
+    // Determine grade based on marks
+    if (marks >= 90) {
+        grade = 'A';
+    } else if (marks >= 80) {
+        grade = 'B';
+    } else if (marks >= 70) {
+        grade = 'C';
+    } else if (marks >= 60) {
+        grade = 'D';
+    } else {
+        grade = 'E';
+    }
+
+    // Display the calculated grade
+    printf("The grade is: %c\n", grade);
+
+    return 0;
+}
+
+
+
+|--------------------------------------------------------------|
+|                                                              |
+|                          END                                 |
+|                                                              |
+|--------------------------------------------------------------|
+
+
